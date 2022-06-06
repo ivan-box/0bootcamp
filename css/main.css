@@ -6,6 +6,10 @@
     --secondary-bg-color: #f5f5f5;
 }
 
+.list {
+    list-style: none;
+}
+
 body {
     color: var(--title-text-color);
     background-color: var(--primary-bg-color);
@@ -13,13 +17,14 @@ body {
     letter-spacing: -0.015em;
     font-weight: 400;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 1.67;
 }
 
 .logo {
     font-family: 'Comfortaa', cursive;
     font-size: 28px;
     line-height: 1.14;
+    text-decoration: none;
 }
 
 .site-nav .link {
@@ -27,6 +32,7 @@ body {
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
+    text-decoration: none;
 }
 
 .site-nav .link:hover,.site-nav .link:focus {
@@ -37,10 +43,11 @@ body {
 
 .button {
     color: var(--title-text-color);
-    background-color: var(--primary-bg-color: #ffffff);
+    background-color: var(--primary-bg-color);
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
+    text-decoration: none;
 }
 
 .button.primary {
