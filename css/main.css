@@ -1,9 +1,15 @@
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
 :root {
     --primary-text-color: rgba(0, 0, 0, 0.8);
     --title-text-color: #000000;
     --accent-color: #18A0FB;
     --primary-bg-color: #ffffff;
     --secondary-bg-color: #f5f5f5;
+    --hero-bg-color: #E5E5E5;
+
 }
 
 .list {
@@ -11,6 +17,7 @@
 }
 
 body {
+    width: 1680px;
     color: var(--title-text-color);
     background-color: var(--primary-bg-color);
     font-family: 'Montserrat', sans-serif;
@@ -18,15 +25,47 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.67;
+    letter-spacing: -0.015em;
+}
+/*  хедер */
+
+.photo-logo {
+    padding-right: 12px;
 }
 
 .logo {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-right: 270px;
     font-family: 'Comfortaa', cursive;
     font-size: 28px;
     line-height: 1.14;
     text-decoration: none;
+    color: var(--title-text-color);
 }
 
+.site-nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.link-nav {
+    display: flex;
+
+}
+.link-nav li+li{
+    margin-left: 40px;
+
+}
+.link {
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+.link-button {
+    display: flex;
+    margin-left: auto;
+}
 .site-nav .link {
     color: var(--accent-color);
     font-weight: 500;
@@ -39,7 +78,6 @@ body {
     color: var(--title-text-color);
 }
 
-/* .site-nav .link */
 
 .button {
     color: var(--title-text-color);
@@ -48,19 +86,35 @@ body {
     font-size: 15px;
     line-height: 1.2;
     text-decoration: none;
+    border-radius: 6px;
 }
 
 .button.primary {
+    padding: 11px 42px;
+    margin-right: 80px;
+    margin-left: 12px;
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
+    border: 2px solid transparent;
 }
 
 .button.secondary {
+    padding: 11px 34px;
     color: var(--accent-color);
     background-color: var(--primary-bg-color);
+    border: 2px solid var(--accent-color);
+}
+
+/* герой */
+
+.hero {
+    width: 1680px;
+    background-color: var(--hero-bg-color);
 }
 
 .hero-title {
+    padding-top: 632px;
+    margin-bottom: 40px;
     color: var(--title-text-color);
     font-weight: 400;
     font-size: 56px;
@@ -68,10 +122,48 @@ body {
     text-align: center;
 }
 
+.hero .button.primary {
+    display: inline-block;
+    margin-left: 744px;
+    margin-bottom: 156px;
+
+}
+
+/* секція snap photos */
+
+.snap-photos {
+    padding: 120px 80px;
+}
+
 .section-title {
     color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 24px;
+    font-size: 48px;
     line-height: 1.5;
-    text-align: center;
+    
 }
+
+.snap-photos ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.snap-photos li{
+    width: calc((100% - 150px)/2);
+    margin: 60px 0;
+    
+}
+
+.snap-photos p{
+    margin-top: 24px;
+    margin-bottom: 32px;
+    
+}
+
+
+.snap-photos li:nth-child(2n+1) {
+    margin-right: 150px;
+    
+}
+
+
