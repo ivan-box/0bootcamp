@@ -1,7 +1,14 @@
-h1, h2, h3 {
-    margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+{
     padding: 0;
-}
+    margin: 0;}
+
 :root {
     --primary-text-color: rgba(0, 0, 0, 0.8);
     --title-text-color: #000000;
@@ -14,6 +21,7 @@ h1, h2, h3 {
 
 .list {
     list-style: none;
+    
 }
 
 body {
@@ -165,5 +173,59 @@ body {
     margin-right: 150px;
     
 }
+
+/* The best photo */
+
+
+.best-photo {
+    /* padding: 80px; */
+
+}
+
+.best-photo h2 {
+    display: none;
+
+}
+
+.best-photo div {
+    /* margin: 80px; */
+
+}
+
+.best-photo li {
+    display: flex;
+
+}
+
+.best-photo ul {
+    padding: 0;
+
+}
+
+.best-photo img {
+    /* margin: 80px 0; */
+}
+
+.best-photo .best-text {
+    align-self: center;
+    /* margin: 225px 80px; */
+}
+.best-text h3{
+    margin-bottom: 24px;
+}
+
+.reverse li{
+    flex-direction: row-reverse;
+    margin-top: 80px;
+}
+.reverse, .row {
+    padding: 80px;
+}
+
+.row {
+    
+}
+
+
 
 
